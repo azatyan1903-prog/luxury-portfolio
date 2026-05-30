@@ -1,0 +1,120 @@
+.luxury-projects-section {
+  padding: 20px 0;
+}
+
+.luxury-section-title {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.luxury-project-card {
+  background: linear-gradient(135deg, #111217 0%, #15161c 100%);
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  border-left: 3px solid var(--gold-primary);
+  border-radius: 0 24px 24px 0;
+  padding: 45px 40px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+}
+
+.project-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  gap: 15px;
+}
+
+.project-card-header h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.project-badge-url {
+  font-size: 12px;
+  color: var(--gold-primary);
+  background: rgba(212, 175, 55, 0.06);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  padding: 5px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.project-card-desc {
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.project-bullet-highlights {
+  list-style: none;
+  margin-bottom: 35px;
+}
+
+.project-bullet-highlights li {
+  font-size: 14.5px;
+  color: #d1d3dc;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 22px;
+  line-height: 1.5;
+}
+
+.project-bullet-highlights li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--gold-primary);
+  font-weight: 800;
+}
+
+.project-tech-tags-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 35px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.luxury-tech-tag {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  color: #cdd0db;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 12.5px;
+  font-weight: 500;
+}
+
+.luxury-live-redirect {
+  color: var(--gold-primary);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+.luxury-live-redirect:hover .redirect-arrow {
+  transform: translateX(5px);
+}
+
+.redirect-arrow {
+  transition: transform 0.3s var(--ease-premium);
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .project-card-header { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .luxury-project-card { padding: 30px 20px; }
+}

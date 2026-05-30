@@ -1,0 +1,95 @@
+.luxury-hero {
+  padding: 40px 0 20px 0;
+}
+
+.gold-badge {
+  background: rgba(212, 175, 55, 0.06);
+  border: 1px solid rgba(212, 175, 55, 0.18);
+  color: var(--gold-primary);
+  padding: 6px 16px;
+  border-radius: 100px;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 25px;
+}
+
+.luxury-name {
+  font-size: 68px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  margin-bottom: 20px;
+  background: linear-gradient(180deg, #ffffff 0%, #a4a7b0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.05;
+}
+
+.luxury-tagline {
+  font-size: 17px;
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 30px;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+}
+
+.gold-slash {
+  color: var(--gold-primary);
+  font-weight: 700;
+  margin: 0 4px;
+}
+
+.luxury-lead {
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 45px;
+  max-width: 620px;
+}
+
+.luxury-hero-actions {
+  display: flex;
+  gap: 20px;
+}
+
+.action-gold-btn {
+  background: linear-gradient(135deg, #fff5d6 0%, #d4af37 100%);
+  color: #07080a;
+  padding: 16px 36px;
+  border-radius: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 15px;
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.15);
+  transition: transform 0.3s var(--ease-premium), box-shadow 0.3s var(--ease-premium);
+}
+
+.action-gold-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(212, 175, 55, 0.25);
+}
+
+.action-outline-btn {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  padding: 16px 36px;
+  border-radius: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.3s var(--ease-premium);
+}
+
+.action-outline-btn:hover {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .luxury-name { font-size: 46px; }
+  .luxury-hero-actions { flex-direction: column; gap: 12px; }
+  .action-gold-btn, .action-outline-btn { text-align: center; }
+}
