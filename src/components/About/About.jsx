@@ -15,7 +15,7 @@ const About = () => {
         
         <div className="about-content-card">
           <p>
-            I'm a 3rd-year Information Technology student with a growing passion for building clean, responsive web experiences. 
+            I'm a 4th-year Information Technology student with a growing passion for building clean, responsive web experiences. 
             Over the past 6 months, I've been deeply focused on Front-End development — sharpening my skills in JavaScript, 
             React.js, HTML5, and CSS3 through hands-on projects.
           </p>

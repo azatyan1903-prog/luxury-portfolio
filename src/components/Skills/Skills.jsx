@@ -1,11 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './Skills.css';
-import aniVideo from '../../assets/imgs/IMG_8698.MP4'
-
 
 import { RiReactjsLine } from 'react-icons/ri';
-import { IoLogoJavascript, IoLogoHtml5, IoLogoCss3 } from 'react-icons/io5';
+import { IoLogoJavascript, IoLogoHtml5 } from 'react-icons/io5';
 import { SiTypescript, SiRedux, SiFormik, SiCplusplus, SiFigma, SiCoreldraw } from 'react-icons/si';
 
 const Skills = () => {
@@ -23,19 +21,45 @@ const Skills = () => {
   ];
 
   return (
-    <div className="sticky-sidebar-inner">
+    <div className="skills-split-container">
       
       <motion.div 
-        className="luxury-portrait-frame-wrapper"
-        whileHover={{ scale: 1.015 }}
-        transition={{ duration: 0.4, ease: [0.23, 1, 0.32, 1] }}
+        className="skills-info-side"
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
       >
-        <div className="glowing-gold-halo">
-          <video src={aniVideo} autoPlay loop muted playsInline className="luxury-avatar-video" />
+        <div className="skills-small-title">MY TECH STACK</div>
+        <h2 className="skills-main-heading">Architecting Clean & Scalable Solutions</h2>
+        <p className="skills-description-text">
+          My development process focuses on combining clean core programming logic with modern frontend structures. 
+          From object-oriented architecture to state management, I aim to build secure, user-first applications.
+        </p>
+
+        <div className="skills-stats-grid">
+          <div className="stat-node">
+            <span className="stat-number">04</span>
+            <span className="stat-label">University Year</span>
+          </div>
+          <div className="stat-node">
+            <span className="stat-number">10+</span>
+            <span className="stat-label">Tech Tools Mastered</span>
+          </div>
+          <div className="stat-node">
+            <span className="stat-number">A+</span>
+            <span className="stat-label">OOP & UI Focus</span>
+          </div>
         </div>
       </motion.div>
 
-      <div className="luxury-skills-matrix-panel">
+      <motion.div 
+        className="luxury-skills-matrix-panel"
+        initial={{ opacity: 0, x: 20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+      >
         <div className="matrix-panel-header">
           <h3>Technical Skills Matrix</h3>
         </div>
@@ -59,7 +83,7 @@ const Skills = () => {
             </motion.div>
           ))}
         </div>
-      </div>
+      </motion.div>
 
     </div>
   );

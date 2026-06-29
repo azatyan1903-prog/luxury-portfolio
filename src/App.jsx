@@ -1,9 +1,10 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
 import Hero from './components/Hero/Hero';
 import About from './components/About/About';
 import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
+import Footer from './components/Footer/Footer'
 import './App.css'; 
 
 function App() {
@@ -16,26 +17,36 @@ function App() {
           <div className="nav-logo" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
             ANI<span>.</span>
           </div>
+          
           <div className="nav-links">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
+            <Link to="about" spy={true} smooth={true} offset={-90} duration={500} activeClass="active">
+              About
+            </Link>
+            <Link to="skills" spy={true} smooth={true} offset={-90} duration={500} activeClass="active">
+              Skills
+            </Link>
+            <Link to="projects" spy={true} smooth={true} offset={-90} duration={500} activeClass="active">
+              Projects
+            </Link>
           </div>
         </div>
       </nav>
 
       <div className="luxury-main-layout">
-        
-        <div className="left-content">
+        <div className="full-width-content">
+          
           <Hero />
+          
           <About />
+          
+          <section id="skills" className="app-skills-section">
+            <Skills />
+          </section>
+          
           <Projects />
+          <Footer/>
+          
         </div>
-
-        <div className="right-sticky-sidebar" id="skills">
-          <Skills />
-        </div>
-
       </div>
 
       <footer className="luxury-footer">

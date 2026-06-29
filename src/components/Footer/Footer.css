@@ -1,0 +1,135 @@
+.luxury-footer {
+  width: 100%;
+  background: #07080a; 
+  border-t: 1px solid rgba(255, 255, 255, 0.04);
+  padding: 50px 0;
+  margin-top: 100px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer-copyright-side {
+  flex: 1;
+}
+
+.copyright-text {
+  font-size: 14px;
+  color: #a4a7b0;
+  font-weight: 500;
+  margin: 0;
+}
+
+.footer-sub-text {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.3);
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+.footer-contacts-side {
+  flex: 1.5;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer-contact-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #a4a7b0;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-contact-link:hover {
+  color: #ffffff;
+}
+
+.contact-icon {
+  color: rgba(255, 255, 255, 0.2);
+  transition: color 0.3s ease;
+}
+
+.footer-contact-link:hover .contact-icon {
+  color: var(--gold-primary); 
+}
+
+.footer-socials-side {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.social-icon-btn {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a4a7b0;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.linkedin-btn:hover {
+  color: #0077b5;
+  border-color: #0077b5;
+  box-shadow: 0 0 20px rgba(0, 119, 181, 0.35);
+  transform: translateY(-3px);
+}
+
+.github-btn:hover {
+  color: #ffffff;
+  border-color: #ffffff;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
+  transform: translateY(-3px);
+}
+
+.instagram-btn:hover {
+  color: #e1306c;
+  border-color: #e1306c;
+  box-shadow: 0 0 20px rgba(225, 48, 108, 0.35);
+  transform: translateY(-3px);
+}
+
+.telegram-btn:hover {
+  color: #0088cc;
+  border-color: #0088cc;
+  box-shadow: 0 0 20px rgba(0, 136, 204, 0.35);
+  transform: translateY(-3px);
+}
+
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .footer-contacts-side {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .footer-socials-side {
+    justify-content: center;
+  }
+}
